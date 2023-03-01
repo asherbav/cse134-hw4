@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Asher's Portfolio Page</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    </head>
+
+    <!-- Content here-->
+    <body> 
+        
+        <header>
+            <h1> Asher Av</h1>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/Projects.html"> Projects</a>
+                <a href="/Experiments.html"> Experiments</a>
+                <a href="/Contact.html"> Contact</a>
+            </nav>
+        </header>
+        <hr>
+
+        <main> 
+            <div>
+                <p>This is an experimental page. </p>
+                <span>
+                    Try resizing 
+                    <svg width="70" height="70">
+                        <rect x="0" y="0" rx="20" ry="20" width="70" height="70" />
+                    </svg>
+                    <svg width="50" height="50">
+                        <rect x="0" y="0" rx="20" ry="20" width="50" height="50" />
+                    </svg>  
+                    
+                    the browser 
+                </span>
+                and you'll find something <i>interesting</i>
+            </div>
+            
+            <h2>Media</h2>
+            <section>
+                
+                <h3>Picture</h3>
+
+                <picture>
+                  <source media="(min-width:800px)" srcset="/images/Geisel_Library_2.jpg">
+                  <img src="/images/cse_ucsd.png" alt="UCSD image" style="width:auto;">
+                </picture>
+
+                <h3>Video</h3>
+
+                <p> I'm into cosmology as well! Einstein described gravity as a curvature in space-time and thus we see the bending of light below. </p>
+                <video width="320" height="240" controls>
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/a/a4/BBH_gravitational_lensing_of_gw150914.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video> 
+
+
+                <h3>Audio</h3>
+
+                    <p> I really like Mozart's piano sonatas</p>
+                    <audio controls>
+                        <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d0/Mozart_-_Piano_Sonata_No._12_in_F_Major%2C_K.332_-_II._Adagio.ogg/Mozart_-_Piano_Sonata_No._12_in_F_Major%2C_K.332_-_II._Adagio.ogg.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+
+                <aside> 
+                <pre>
+                    The above piece was performed by Wikipedia user La Pianista, 
+                    who published the piece as free to share with the appropriate attribution: 
+                    Wolfgang Amadeus Mozart, CC BY-SA 3.0 <a href ="https://creativecommons.org/licenses/by-sa/3.0">license</a>, via Wikimedia Commons. 
+                    We can actually check out the source below! 
+                </pre>
+                </aside>
+                <h3>iframe</h3>
+                        <iframe src="https://commons.wikimedia.org/wiki/File:Mozart_-_Piano_Sonata_No._12_in_F_Major,_K.332_-_II._Adagio.ogg" height="300" width="700" title="Where the audio came from" sandbox></iframe> 
+            </section>
+
+            <h2>Other</h2>
+            <section>
+                <span>Using the <code>textarea</code>, <code>canvas</code>, <code>optgroup</code>, <code>datalist</code> and <code>fieldset</code> tags</span>
+
+                <h3>Text Area</h3>
+                <textarea name="textarea" rows="6" cols="20" readonly>
+                    I'd like to say <insert text here> but this is a read-only textarea.
+                </textarea>
+
+                <h3>Canvas</h3>
+                <canvas id="myCanvas" width="200" height="100">
+                    Your browser does not support the canvas element.
+                </canvas>
+                <script>
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.beginPath();
+                    ctx.arc(95,50,40,0,2*Math.PI);
+                    ctx.stroke();
+                </script> 
+
+                <h3>Question time!</h3>
+
+                <table>
+                    <caption>Chip Table</caption>
+                    <colgroup>
+                        <col>
+                        <col span="2" class="potato">
+                        <col span="3" class="corn">
+                    </colgroup>
+                    <tr>
+                        <th colspan="6">Frito-Lay</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Type</th>
+                        <td colspan="2">Potato</td>
+                        <td colspan="3">Corn</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">Name </th>
+                        <td>Lay's</td>
+                        <td>Ruffles</td>
+                        <td>Doritos</td>
+                        <td>Cheetos</td>
+                        <td>Funyuns</td>
+                    </tr>
+                </table>
+
+                <br>
+                <br>
+                <label for="chip-select">Which is your favorite?:</label>
+                <select id="chip-select">
+                    <optgroup label="Potato">
+                        <option>Lays</option>
+                        <option>Ruffles</option>
+                        
+                    </optgroup>
+                    <optgroup label="Corn">
+                        <option>Doritos</option>
+                        <option>Cheetos</option>
+                        <option>Funyuns</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <label for="myBrowser">Choose a browser from this list:</label>
+                <input list="browsers" id="myBrowser" name="myBrowser" >
+                <datalist id="browsers">
+                  <option value="Chrome"></option>
+                  <option value="Firefox"></option>
+                  <option value="Microsoft Edge"></option>
+                </datalist>
+                <br>
+                <br>
+                <form>
+                    <fieldset>
+                      <legend>What's your favorite OS?</legend>
+                  
+                      <input type="radio" id="Windows" name="system" value="W">
+                      <label for="Windows">Windows</label><br>
+                  
+                      <input type="radio" id="MacOS" name="system" value="M">
+                      <label for="MacOS">macOS</label><br>
+                  
+                      <input type="radio" id="Linux" name="system" value="L">
+                      <label for="Linux">Linux</label>
+                    </fieldset>
+                </form>
+                <br>
+                
+                <button name="button">Clicking this does nothing for now</button>
+                  
+                    
+            </section>
+        </main>
+
+        <hr>
+        
+        <footer> 
+            <p>This page was made by Asher Av</p>
+        </footer>
+    </body>
+
+
+
+
+</html>
