@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="description" content="HTML Web page for CSE 134B" >
+        <meta name="keywords" content="HTML" >
+        <meta name="author" content="" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title> Simple Dialogs</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <script defer type ="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+
+
+    </head>
+    
+    <!-- Content here-->
+    <body> 
+    
+        <header>
+            <h1> Simple Dialogs?</h1>
+        </header>
+
+        <button id="alert-button">Alert</button>
+        <button id="confirm-button">Confirm</button>
+        <button id="prompt-button">Prompt</button>
+        <button id="safer-button">Safer Prompt</button>
+        <hr> 
+        <output id="prompt-output"></output>
+    
+
+    <script>
+        const output = document.getElementById("prompt-output");
+        const alertButton = document.getElementById("alert-button");
+        const confirmButton = document.getElementById("confirm-button");
+        const promptButton = document.getElementById("prompt-button");
+        const saferButton = document.getElementById("safer-button");
+    
+
+        function clean(dirty){
+            return DOMPurify.sanitize(dirty);
+        }
+
+        alertButton.addEventListener("click", () => {
+            output.textContent = ""; // Clear output tag
+            alert("Alert Pressed!");
+        });
+
+        confirmButton.addEventListener("click", () => {
+            output.textContent = ""; // Clear output tag
+            let input = confirm("Do you confirm this?");
+            output.textContent = `The value returned by the confirm method is : ${input}`;
+        });
+
+        // used <p style="color:#FF0000";>Hacked with red text</p>
+        promptButton.addEventListener("click", () => {
+            output.innerHTML = ""; // Clear output tag
+            let input = prompt("What is your name?");
+            if (input === null ) {
+                output.innerHTML = `Prompt Result: User didn't enter anything`;
+            }
+            else{
+                output.innerHTML = "Prompt Result:" + input;
+            }
+
+        });
+
+        saferButton.addEventListener("click", () => {
+            output.textContent = ""; // Clear output tag
+            const dirty = prompt("What is your name?");
+            let input = clean(dirty);
+            if (dirty === null ) {
+                output.textContent = `Safer Prompt Result: User didn't enter anything`;
+            }
+            else{
+                output.textContent = `Safer Prompt Result: ${input}`;
+            }
+
+        });
+
+
+    </script>
+
+        
+    </body>
+
+    <footer></footer>
+
+
+
+</html>

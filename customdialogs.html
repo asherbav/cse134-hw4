@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="description" content="HTML Web page for CSE 134B" >
+        <meta name="keywords" content="HTML" >
+        <meta name="author" content="" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title> Custom Dialogs</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <script defer src="/customdialog.js"></script>
+        <script defer type ="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+
+    </head>
+    
+    <!-- Content here-->
+    <body> 
+    
+        <header>
+            <h1> Custom Dialogs</h1>
+        </header>
+        
+        <dialog id="alert-dialog">
+            <p>Alert pressed!</p>
+            <form method = "dialog">
+                <button id="alert-ok">Ok</button>
+            </form>
+
+        </dialog>
+
+        <dialog id="confirm-dialog">
+            <p>Do you confirm this?</p>
+            <form method = "dialog">
+                <button id="confirm-ok" value="true">Ok</button>
+                <button id="confirm-cancel" value="false">Cancel</button>
+            </form>
+
+        </dialog>
+
+        <dialog id="prompt-dialog">
+            <p>What is your name?</p>
+            <form method = "dialog">
+                <label for="prompt">
+                    <input id="prompt-input" type = "text" />
+                </label>
+                <button id="prompt-ok">Submit</button>
+                <button id="prompt-cancel">Cancel</button>
+            </form>
+
+        </dialog>
+
+
+
+        <button id="alert-button">Alert</button>
+        <button id="confirm-button">Confirm</button>
+        <button id="prompt-button">Prompt</button>
+        <hr> 
+        <output id="prompt-output" name="prompt-out"></output>
+    
+
+        
+    </body>
+
+
+
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="description" content="HTML Web page for CSE 134B" >
+        <meta name="keywords" content="HTML" >
+        <meta name="author" content="" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title> Blog Posts</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <script defer src="/blog.js"></script>
+        <script defer type ="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+
+    </head>
+    
+    <!-- Content here-->
+    <body> 
+        <header>
+            <h1> Blog Posts</h1>
+        </header>
+
+        <dialog id="add-dialog">
+            <p>Please fill in the following details</p>
+            <form method = "dialog">
+                <label for="add-title"> Post Title </label>
+                <input id="title-input" type = "text" name = "add-title"/>
+                <label for="add-date"> Post Date</label>
+                <input id="date-input" type = "date" name = "add-date"/>
+                <label for="add-summary"> Post Summary </label>
+                <input id="summary-input" type = "text" name = "add-summary" placeholder="A one to two sentence summary" />
+                <button id="add-submit">Submit</button>
+                <button id="add-cancel">Cancel</button>
+            </form>
+        </dialog>
+
+        <dialog id="update-dialog">
+            <p>Please update the following details</p>
+            <form method = "dialog">
+                <label for="update-title"> Post Title </label>
+                <input id="update-title-input" type = "text" name = "update-title"/>
+                <label for="update-date"> Post Date</label>
+                <input id="update-date-input" type = "date" name = "update-date"/>
+                <label for="update-summary"> Post Summary </label>
+                <input id="update-summary-input" type = "text" name = "update-summary" placeholder="A one to two sentence summary" />
+                <button id="update-submit">Update</button>
+                <button id="update-cancel">Cancel</button>
+            </form>
+        </dialog>
+
+        <output id="post-output">
+            <ol id="output-list" type ="1">
+                <li> My first post, 2023-03-01:A prepopulated summary for 'My first post'
+                    <button id ="deletebutton0" class = "delete-buttons"> Delete</button>  
+                    <button id ="editbutton0"class = "update-buttons"> Edit </button>
+                </li>
+            </ol>
+        </output>
+
+            <button id="add-button">Add</button>
+            
+        <hr> 
+    </body>
+
+</html>
