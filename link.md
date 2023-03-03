@@ -1,16 +1,31 @@
-- Part 1: nativedialogs 
-  - Site: https://famous-sable-e8cd7f.netlify.app/nativedialogs.html
-  - Github: https://github.com/asherbav/cse134-hw4/blob/main/nativedialogs.html
-- Part 2: customdialogs.html
-  - Site: https://famous-sable-e8cd7f.netlify.app/customdialogs.html
-  - Github: https://github.com/asherbav/cse134-hw4/blob/main/customdialogs.html
-- Part 3: crud.html
-  - Site: https://famous-sable-e8cd7f.netlify.app/crud.html
-  - Github: https://github.com/asherbav/cse134-hw4/blob/main/crud.html
-- Part 4: styledcrud.html
-  - Site: https://famous-sable-e8cd7f.netlify.app/styledcrud.html
-  - Github: https://github.com/asherbav/cse134-hw4/blob/main/styledcrud.html
-- part 5: index.html
-  - Site: https://famous-sable-e8cd7f.netlify.app/index.html
-  - Github: https://github.com/asherbav/cse134-hw4/blob/main/index.html
+- Part 1: 
+  - nativedialogs 
+    - Site: https://famous-sable-e8cd7f.netlify.app/nativedialogs.html
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/nativedialogs.html
+- Part 2: 
+  - customdialogs.html
+    - Site: https://famous-sable-e8cd7f.netlify.app/customdialogs.html
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/customdialogs.html
+  - customdialog.js
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/customdialog.js
+- Part 3: 
+  - crud.html
+    - Site: https://famous-sable-e8cd7f.netlify.app/crud.html
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/crud.html
+  - blog.js
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/blog.js
+  
+- Part 4: 
+  - styledcrud.html
+    - Site: https://famous-sable-e8cd7f.netlify.app/styledcrud.html
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/styledcrud.html
+  - styledposts.js
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/styledposts.js
+- Part 5: 
+  - index.html
+    - Site: https://famous-sable-e8cd7f.netlify.app/index.html
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/index.html
+  - Projects.html
+    - Site: https://famous-sable-e8cd7f.netlify.app/Projects.html
+    - Github: https://github.com/asherbav/cse134-hw4/blob/main/Projects.html
 

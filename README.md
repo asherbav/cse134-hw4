@@ -1,12 +1,16 @@
 # cse134-hw4
 - PID: A16047586
-- Netlify URL: https://famous-sable-e8cd7f.netlify.app
+- Main Netlify URL: https://famous-sable-e8cd7f.netlify.app
 - Notes: 
-  - For the unsafe prompt in nativedialogs, used the input '<p style="color:#FF0000";>Hacked with red text</p>' to verify
+  - For the unsafe prompt in nativedialogs, used the input '<p style="color:#FF0000";>Hacked with red text</p>' to verify bad input
   - Using CDN for native dialogs works, but I could not successfully npm install dompurify to make it modular for customdialogs
-  - CRUD uses localstorage for blog posts
-    - Localstorage is called for every add, update, and delete
-  - Main portfolio site(index.html) updates:
+  - CRUD 
+    - Localstorage for blog posts
+      - Localstorage is called for every add, update, and delete
+    - Cancel button simply closes dialog intentionally without triggering anything
+  - Styled CRUD:
+    - Uses font for awesome icons
+  - Main portfolio site(index.html) main updates:
     - nav links
     - projects
     - google analytics
